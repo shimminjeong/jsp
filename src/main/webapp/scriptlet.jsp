@@ -11,7 +11,7 @@
     int i=0;
     while(true){
         i++;
-        out.println("2 * "+i+" = "+(2*i)+"<br/>");
+        out.println("2 * "+i+" = "+(2*i)+"<br />");
 %>
 ++++++++++++++++<br/>
 <%
