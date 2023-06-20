@@ -6,7 +6,6 @@
     <servlet-name>HelloWorld</servlet-name>
     <servlet-class>com.jsplec.ex.HelloWorld</servlet-class>
   </servlet>
-  
   <display-name>WebTest</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -16,41 +15,37 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <!-- <servlet>
-    <description></description>
-    <display-name>FormEx</display-name>
-    <servlet-name>FormEx</servlet-name>
-    <servlet-class>com.jsplec.ex.FormEx</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FormEx</servlet-name>
-    <url-pattern>/FormEx</url-pattern>
-  </servlet-mapping> -->
+  <!-- 데이터공유 -->
+  <context-param>
+    <param-name>dbId</param-name>
+    <param-value>abcde</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbPwd</param-name>
+    <param-value>1234</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbSid</param-name>
+    <param-value>orcl</param-value>
+  </context-param>
+  <context-param>
+    <param-name>testId</param-name>
+    <param-value>123</param-value>
+  </context-param>
   <servlet>
     <description></description>
     <display-name>InParameterEx</display-name>
     <servlet-name>InParameterEx</servlet-name>
     <servlet-class>com.jsplec.ex2.InParameterEx</servlet-class>
- <!--    <init-param>
-        <param-name>dbId</param-name>
-        <param-value>abcde</param-value>
-    </init-param>
-    <init-param>
-        <param-name>dbPwd</param-name>
-        <param-value>1234</param-value>
-    </init-param>
-    <init-param>
-        <param-name>dbSid</param-name>
-        <param-value>orcl</param-value>
-    </init-param>
-    <init-param>
-        <param-name>testId</param-name>
-        <param-value>123</param-value>
-    </init-param> -->
-  
   </servlet>
-<!--   <servlet-mapping>
-    <servlet-name>InParameterEx</servlet-name>
-    <url-pattern>/InParameterEx</url-pattern>
-  </servlet-mapping> -->
+  <servlet>
+    <description></description>
+    <display-name>InParameterEx2</display-name>
+    <servlet-name>InParameterEx2</servlet-name>
+    <servlet-class>com.jsplec.ex2.InParameterEx2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InParameterEx2</servlet-name>
+    <url-pattern>/InParameterEx2</url-pattern>
+  </servlet-mapping>
 </web-app>
