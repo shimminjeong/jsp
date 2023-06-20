@@ -15,7 +15,9 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <!-- 데이터공유 -->
+  <listener>
+    <listener-class>com.jsplec.ex2.ContextListener</listener-class>
+  </listener>
   <context-param>
     <param-name>dbId</param-name>
     <param-value>abcde</param-value>
@@ -47,5 +49,16 @@
   <servlet-mapping>
     <servlet-name>InParameterEx2</servlet-name>
     <url-pattern>/InParameterEx2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>ListenerTest</display-name>
+    <servlet-name>ListenerTest</servlet-name>
+    <servlet-class>com.jsplec.ex2.ListenerTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListenerTest</servlet-name>
+    <url-pattern>/ListenerTest</url-pattern>
   </servlet-mapping>
 </web-app>
