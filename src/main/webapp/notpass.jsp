@@ -10,11 +10,10 @@
 <h1>통과 못했어요</h1>
 
     <%!
-        int age;
+        String age;
     %>
     <%
-        String strage=request.getParameter("age");
-        age=Integer.parseInt(strage);
+        age = request.getParameter("age");
     %>
     당신의 나이는&nbsp;<%= age %>세로 미성년자입니다.<br/>
     <a href="requestex.html">처음으로</a>
