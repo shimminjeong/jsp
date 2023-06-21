@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>main.jsp 페이지입니다.</h1>
-<jsp:forward page="sub.jsp"></jsp:forward>
+<%-- <h1>main.jsp 페이지입니다.</h1>
+<jsp:forward page="sub.jsp"></jsp:forward> --%>
+<jsp:forward page="forward_param.jsp">
+    <jsp:param name="id" value="test"/>
+    <jsp:param name="passwd" value="1234"/>
+</jsp:forward>
 </body>
 </html>
