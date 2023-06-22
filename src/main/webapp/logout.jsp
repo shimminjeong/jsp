@@ -15,11 +15,11 @@
         String str=cookies[i].getValue();
         
         if(str.equals("sim")||str.equals("7629")){
-            cookies[i].setMaxAge(0); /* 쿠키 삭제 */
-            response.addCookie(cookies[i]);
+            cookies[i].setMaxAge(0); /* 쿠키 삭제 서버단*/ 
+            response.addCookie(cookies[i]); /* 삭제를 클라이언트에 반영한다 */
             
-            out.println("삭제된 쿠키의 속성 이름(name["+i+"]) : "+cookies[i].getName()+"<br/>");
-            out.println("삭제된 쿠키의 속성 비밀번호(passwd["+i+"]) : "+cookies[i].getValue()+"<br/>");
+            out.println("삭제된 쿠키의 속성 이름(name["+i+"])"+cookies[i].getName()+"<br/>");
+            out.println("삭제된 쿠키의 속성 비밀번호(passwd["+i+"])"+cookies[i].getValue()+"<br/>");
             out.println("---------------------------"+"<br/>");
         } 
     }
