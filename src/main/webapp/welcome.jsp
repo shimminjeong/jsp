@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -27,6 +28,8 @@
         out.println("설정된 쿠키의 속성 값(value["+i+"]) : "+cookies[i].getValue()+"<br/>");
         out.println("---------------------------"+"<br/>");
     }
+    
+
 %>
 <br/>
 <a href="logout.jsp">logout</a>
