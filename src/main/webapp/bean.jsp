@@ -10,5 +10,6 @@
 	<jsp:useBean id="student" class="com.jsplec.ex16.Student" scope="page" />
     <jsp:setProperty property="name" name="student" value="½É¹ÎÁ¤"/>
     <jsp:getProperty property="name" name="student"/>
+
 </body>
 </html>
