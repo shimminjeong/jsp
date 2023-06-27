@@ -8,13 +8,13 @@ public class MemberInfo {
     
     
 
-    public MemberInfo(String id, String password, String name, String email) {
-        super();
-        this.id = id;
-        this.password = password;
-        this.name = name;
-        this.email = email;
-    }
+//    public MemberInfo(String id, String password, String name, String email) {
+//        super();
+//        this.id = id;
+//        this.password = password;
+//        this.name = name;
+//        this.email = email;
+//    }
 
     public String getId() {
         return id;
