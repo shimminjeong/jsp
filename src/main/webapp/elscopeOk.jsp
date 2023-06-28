@@ -12,15 +12,14 @@
    String pw = request.getParameter("pw");
    %>
 
-   아이디:
-   <%=id%><br /> 비밀번호:
-   <%=pw%><br />
+   아이디: <%=id%><br /> 
+   비밀번호:<%=pw%><br />
 
    <hr />
 
-   아이디: ${param.id }
-   <br /> 비밀번호: ${param.pw }
-   <br />
+   아이디: ${param.id }<br /> 
+   비밀번호: ${param.pw }<br />
+   
 
    <hr />
 
